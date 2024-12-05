@@ -1,0 +1,195 @@
+.body {
+  width: 450px; /* Increased width for better content fitting */
+}
+
+.searched-movie {
+  max-height: 250px; /* Increased max height */
+  overflow-y: auto; /* Allow scrolling */
+}
+
+.search-container {
+  margin-bottom: 15px; /* Increased bottom margin */
+}
+
+.search-container p:hover {
+  background-color: #80deea; /* Lighter blue on hover */
+}
+
+.container {
+  width: 75%; /* Increased container width */
+}
+
+.movie-details {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.poster-image {
+  width: 220px; /* Increased width */
+  height: auto;
+  margin-right: 25px; /* Increased margin */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+.search {
+  background-color: #2196F3; /* Blue search background */
+  height: 40px; /* Increased height for a bigger search box */
+}
+
+.form-fields {
+  flex: 1;
+}
+
+.field {
+  margin-bottom: 20px; /* Increased margin */
+}
+
+.field label {
+  display: block;
+  margin-bottom: 7px; /* Slightly more space between label and input */
+  font-weight: bold;
+}
+
+.field input,
+.field textarea {
+  width: 75%; /* Increased width for better fit */
+  padding: 12px; /* More padding */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* More rounded corners */
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.15); /* Stronger inset shadow */
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input:disabled,
+.field textarea:disabled {
+  background-color: #f1f1f1; /* Lighter disabled input background */
+}
+
+.videos, .cast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Increased gap between items */
+  margin: 30px 0; /* Increased margin */
+}
+
+.video-item, .cast-item {
+  flex: 1 1 320px; /* Adjusted flex for better spacing */
+  max-width: 320px; /* Max width to ensure proper layout */
+  text-align: center;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 220px; /* Increased video height */
+}
+
+.cast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cast-item img {
+  border-radius: 50%;
+  width: 120px; /* Increased image size */
+  height: 120px; /* Increased image size */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cast-item:hover {
+  transform: scale(1.1); /* Slightly more prominent hover effect */
+}
+
+.cast-item img:hover {
+  transform: scale(1.15); /* Slightly enlarge the image on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+}
+
+.btn-save {
+  display: block;
+  width: 90%; /* Increased width */
+  background-color: #388e3c; /* Darker green */
+  padding: 0.85rem; /* Slightly larger padding */
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem; /* Larger font size */
+  font-weight: 800;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-save:hover {
+  background-color: #2e7d32; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly larger scale effect */
+}
+
+.cancel {
+  display: block;
+  width: 90%; /* Increased width */
+  background-color: #757575; /* Dark gray */
+  padding: 0.85rem;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem; /* Larger font size */
+  font-weight: 800;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel:hover {
+  background-color: #616161; /* Slightly lighter gray on hover */
+  transform: scale(1.05); /* Slightly larger scale effect */
+}
+
+.pagination-button {
+  background-color: #00838f; /* Darker blue */
+  color: white;
+  font-size: 18px; /* Larger font size */
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 110px; /* Increased width */
+  margin-top: 12px; /* More space above */
+  margin-inline: 7px; /* Slightly more space between buttons */
+  border-radius: 5px;
+  padding: 12px 25px; /* Larger padding */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #004d40; /* Darker blue on hover */
+  transform: scale(1.1); /* More pronounced hover effect */
+}
+
+.pagination-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.images-section {
+  margin-top: 25px; /* Increased margin for better spacing */
+}
+
+.poster-image, .backdrop-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px; /* Increased bottom margin */
+}
+
+.poster-image {
+  max-height: 450px; /* Increased max height */
+}
+
+.backdrop-image {
+  max-height: 350px; /* Increased max height */
+}

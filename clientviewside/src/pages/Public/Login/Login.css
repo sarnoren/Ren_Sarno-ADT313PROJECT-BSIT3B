@@ -1,0 +1,137 @@
+.Login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #2b1b1b, #1c0d0d);
+  position: relative;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.main-container {
+  width: 350px;
+  border-radius: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  animation: fadeInContainer 1s forwards;
+}
+
+.main-container h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #ddd;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-group input {
+  padding: 0.9rem;
+  font-size: 1rem;
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  border: 1px solid #3e3e3e;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #a78bfa;
+  background: rgba(61, 51, 61, 0.9);
+}
+
+.show-password {
+  text-align: right;
+  color: #b5b5b5;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: -10px;
+}
+
+.submit-container {
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  background-color: #8a2be2;
+  padding: 0.75rem;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #7a1fd1;
+}
+
+.register-container {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+}
+
+.register-container a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInContainer {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
